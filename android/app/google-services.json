@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "303322837103",
+    "project_id": "demo2-7cbd7",
+    "storage_bucket": "demo2-7cbd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303322837103:android:cbd77b04cbded74945dd9a",
+        "android_client_info": {
+          "package_name": "com.thuchanh3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQIcgZ_ituc1oHjjy08B81K8ll4vjkrGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
