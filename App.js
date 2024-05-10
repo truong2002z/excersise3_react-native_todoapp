@@ -1,16 +1,23 @@
-import { View } from "react-native"
-import { Text } from "react-native-paper"
-import firestore from "@react-native-firebase/firestore"
-import { MyContextControllerProvider } from "./store"
-import Register from "./screens/Register"
-import Login from "./screens/Login"
-const App =() =>{
-    firestore()
-    return (
-        <MyContextControllerProvider>
-           <Login/>
-          
-        </MyContextControllerProvider>
-    )
-}
+
+import 'react-native-gesture-handler';
+import React from 'react';
+import { View } from 'react-native';
+import { PaperProvider } from 'react-native-paper';
+import {NavigationContainer} from '@react-navigation/native';
+import MyStack from './routers/MyStack';
+import {MyContextControllerProvider} from './store';
+
+const App = () => {
+  return (
+    <View style={{flex: 1}}>
+      <MyContextControllerProvider>
+        <PaperProvider>
+          <NavigationContainer>
+            <MyStack />
+          </NavigationContainer>
+        </PaperProvider>
+      </MyContextControllerProvider>
+    </View>
+  );
+};
 export default App;
